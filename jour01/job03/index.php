@@ -1,7 +1,10 @@
 <?php 
     $boolean = true;
+  
     $int = 12;
+   
     $string = "hello";
+ 
     $flot = 12.3;
 ?>
 
@@ -21,10 +24,11 @@
             <th>valeur</th>
         </tr>
         <tr>
-            <td><?php echo $boolean; ?></td>
-            <td><?php echo $string; ?></td>
-            <td><?php echo $int; ?></td>
+            <td>boolean<br><?php echo $boolean.$bl1; ?></td>
+            <td>chaine de caractere<br><?php echo $string; ?></td>
+            <td>nombreentier<br><?php echo $int; ?></td>
         </tr>
+        
     </table>
 </body>
 </html>
