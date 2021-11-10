@@ -1,19 +1,7 @@
+<?php
 
-
-<?php 
-
-echo $_POST['prenom']."<br/>";
-echo $_POST['prenom']++;
-// echo $_POST['my-button']."<br/>";
-
-
-// var_dump($_POST);
-
-
-
-
+session_start();
 ?>
-
 
 <html>
 <head>
@@ -22,18 +10,46 @@ echo $_POST['prenom']++;
 
 <body>
 <form action="index.php" method="post">
-    <label for="cheese">
+    <label for="test">
         <input type="text" name="prenom" id="">
     </label>
     
     <br />
     <label for="envoi">
-    <button id="my-button">valider</button>
+    
     </label>
     <label for="recommence">
         <input type="submit" name="submit" value="submit">
+        <input type="submit" name="reset" value="reset">
+
     </label>
 </form>
 
 </body>
 </html>
+<?php 
+
+
+
+if(isset($_POST["reset"])){
+
+    session_destroy();
+    header("Location: #");
+
+}
+
+if(!isset($_SESSION["prenom"])){
+    $_SESSION["prenom"]="";
+    
+
+}
+
+
+if(isset($_POST["prenom"])){
+    $_SESSION["prenom"]=$_SESSION["prenom"].$_POST["prenom"]."<br/>";
+
+}
+echo  $_SESSION["prenom"];
+
+
+    ?>
