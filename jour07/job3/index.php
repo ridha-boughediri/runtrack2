@@ -46,7 +46,7 @@ if(!isset($_SESSION["prenom"])){
 
 
 if(isset($_POST["prenom"])){
-    $_SESSION["prenom"]=$_SESSION["prenom"].$_POST["prenom"]."<br/>";
+    $_SESSION["prenom"].=$_POST["prenom"]."<br/>";
 
 }
 echo  $_SESSION["prenom"];
