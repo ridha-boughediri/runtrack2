@@ -1,1 +1,2 @@
-SELECT `salles`.nom, `etage`.nom FROM `salles` INNER JOIN `etage` ON `salles`.id_etage = `etage`.id;
+SELECT `salles`.nom, `etages`.nom FROM `salles` INNER JOIN `etages` ON `salles`.`ide_etage` = `etages`.id;
+
