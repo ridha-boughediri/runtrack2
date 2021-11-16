@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+body{
+
+    background-color: rgb(52, 161, 37);
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+}
+form{
+
+    background-position: 0fr;
+    border-bottom: yellow;
+}
